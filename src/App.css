@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 /* Global CSS */
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: "Roboto", sans-serif;
-  -moz-osx-font-smoothing: "Roboto", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  -webkit-font-smoothing: "Plus Jakarta Sans", sans-serif;
+  -moz-osx-font-smoothing: "Plus Jakarta Sans", sans-serif;
   font-style: normal;
 }
 
@@ -135,6 +137,11 @@ p {
   font-weight: 800;
   color: #393e46;
 }
+@media only screen and (max-width: 56.25em) {
+  .section--title--name {
+    font-size: 30px;
+  }
+}
 
 /* Section Titles Ends */
 
@@ -155,7 +162,7 @@ p {
 }
 .logo_name {
   color: #393e46;
-  font-family: "Source Sans Pro", sans-serif;
+  /* font-family: "Source Sans Pro", sans-serif; */
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -192,11 +199,9 @@ p {
   font-weight: 700;
   line-height: 24px;
   cursor: pointer;
-  font-family: "Source Sans Pro", sans-serif;
+  /* font-family: "Source Sans Pro", sans-serif; */
 }
-.navbar--active-content {
-  /* color: #929aab; */
-}
+
 /* Navbar Styler Ends */
 
 /* Hero section styles */
@@ -243,7 +248,12 @@ p {
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
-  font-family: "Source Sans Pro", sans-serif;
+  /* font-family: "Source Sans Pro", sans-serif; */
+}
+@media only screen and (max-width: 56.25em) {
+  .hero--section--description {
+    font-size: 20px;
+  }
 }
 .hero--section--img {
   display: flex;
@@ -253,7 +263,7 @@ p {
   height: 100%;
 }
 /* Hero Section Style Ends */
-
+/*------------------------------------------------------------------*/
 /* About Us */
 .about--section {
   padding: 90px 0;
@@ -296,13 +306,19 @@ p {
   max-width: 80rem;
   margin: auto;
   line-height: 1.6;
-  font-family: "Source Sans Pro", sans-serif;
+  /* font-family: "Source Sans Pro", sans-serif; */
 }
 
 .about--section--content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .about--section--content {
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+  }
 }
 .me--title {
   font-weight: 600;
@@ -340,8 +356,73 @@ p {
   color: #666;
 }
 /* About Us Ends */
-
+/*-----------------------------------------------------------*/
 /* My Portfolio Starts */
+.projects_row {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-gap: 5rem;
+  margin-bottom: 11rem;
+}
+.projects__row-img-cont {
+  overflow: hidden;
+}
+.projects__row-img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.projects__row-content {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.projects__row-content-title {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+.projects__row-content-desc {
+  font-size: 20px;
+  color: #666;
+  max-width: 60rem;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+.btn_to_projectDetails {
+  background: #666;
+  color: #fff;
+  padding: 1.5rem 5rem;
+  font-size: 1.6rem;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 56.25em) {
+  .projects_row {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .projects_row {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 8rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .projects__row-content {
+    align-items: center;
+  }
+}
+
+/* --------------------------old portfolio------------------*/
 .portfolio--section {
   display: flex;
   padding: 112px 85px;
@@ -381,7 +462,7 @@ p {
   max-width: 80rem;
   margin: auto;
   line-height: 1.6;
-  font-family: "Source Sans Pro", sans-serif;
+  /* font-family: "Source Sans Pro", sans-serif; */
 }
 .portfolio--container-box {
   display: flex;
@@ -530,7 +611,7 @@ p {
   max-width: 80rem;
   margin: auto;
   line-height: 1.6;
-  font-family: "Source Sans Pro", sans-serif;
+  /* font-family: "Source Sans Pro", sans-serif; */
 }
 
 .contact--form--container {
@@ -617,7 +698,7 @@ input[type="checkbox"] {
   gap: 42.667px;
   text-decoration: none;
   cursor: pointer;
-  font-family: "Source Sans Pro", sans-serif;
+  /* font-family: "Source Sans Pro", sans-serif; */
 }
 .footer--items ul > li > a {
   text-decoration: none;
@@ -729,7 +810,6 @@ input[type="checkbox"] {
   }
   .about--section {
     gap: 20px;
-    padding-top: 0;
     padding-bottom: 0;
   }
   .testimonial--section--card {

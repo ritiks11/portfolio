@@ -28,24 +28,24 @@
     "portfolio": [
       {
         "id": "1",
-        "src": "./img/placeholder-image.png",
+        "src": "./img/bingeflix.png",
         "title": "Bingeflix",
         "description": "Bingeflix is a movie series database application wherein you'll find all the latest content.",
         "link": "https://bingeflix-nu.vercel.app/"
       },
       {
-        "id": "2",
-        "src": "./img/placeholder-image-1.png",
-        "title": "App Dashboard",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-        "link": "View In Github"
+        "id": "1",
+        "src": "./img/bingeflix.png",
+        "title": "Bingeflix",
+        "description": "Bingeflix is a movie series database application wherein you'll find all the latest content.",
+        "link": "https://bingeflix-nu.vercel.app/"
       },
       {
-        "id": "3",
-        "src": "./img/placeholder-image-2.png",
-        "title": "Easy Rentn",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-        "link": "View In Github"
+        "id": "1",
+        "src": "./img/bingeflix.png",
+        "title": "Bingeflix",
+        "description": "Bingeflix is a movie series database application wherein you'll find all the latest content.",
+        "link": "https://bingeflix-nu.vercel.app/"
       }
     ],
     "testimonial": [
