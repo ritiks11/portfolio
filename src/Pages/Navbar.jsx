@@ -95,20 +95,23 @@ function Navbar() {
               PROJECTS
             </Link>
           </li>
+
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-10}
+              duration={500}
+              to="Contact"
+              className="navbar--content"
+            >
+              CONTACT
+            </Link>
+          </li>
         </ul>
       </div>
-      <Link
-        onClick={closeMenu}
-        activeClass="navbar--active-content"
-        spy={true}
-        smooth={true}
-        offset={-10}
-        duration={500}
-        to="Contact"
-        className="btn btn-outline-primary"
-      >
-        CONTACT
-      </Link>
     </nav>
   );
 }
