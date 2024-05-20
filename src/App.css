@@ -218,11 +218,7 @@ p {
   font-weight: 400;
   line-height: 36px;
 }
-@media only screen and (max-width: 56.25em) {
-  .hero--section--description {
-    font-size: 20px;
-  }
-}
+
 .hero--section--img {
   display: flex;
 }
@@ -280,12 +276,7 @@ p {
   grid-template-columns: 1fr 1fr;
   grid-gap: 5rem;
 }
-@media only screen and (max-width: 56.25em) {
-  .about--section--content {
-    grid-template-columns: 1fr;
-    grid-gap: 5rem;
-  }
-}
+
 .me--title {
   font-weight: 600;
   font-size: 30px;
@@ -774,3 +765,148 @@ input[type="checkbox"] {
 }
 
 /* Responsive Screens Ends*/
+/*-----------------------------my mobile--------------------------------*/
+/*Hero Section----------------------------------------------------------*/
+@media only screen and (max-width: 800px) {
+  .hero--section {
+    padding: 100px 30px 100px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .hero--section--title {
+    font-size: 22px;
+    line-height: 40px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .hero--section--description {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+/* NavBar--------------------------------------------------- */
+@media only screen and (max-width: 800px) {
+  .navbar {
+    padding: 15px 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navbar--items.active {
+    top: 0px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navbar--items ul {
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    padding: 50px 20px 10px 10px;
+    z-index: -100;
+  }
+}
+@media screen and (max-width: 800px) {
+  .nav__hamburger {
+    display: flex;
+    z-index: 200;
+    width: 20px;
+  }
+}
+/* About------------------------------------------------- */
+@media only screen and (max-width: 800px) {
+  .about--section {
+    gap: 20px;
+    padding: 20px 15px 20px 15px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .heading--main {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .heading--sub {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .me--title {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .me--details--para {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .about--section--content {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .skills--title {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .skills__skill {
+    padding: 0.5rem 1rem;
+    font-size: 13px;
+  }
+}
+/*Project----------------------------*/
+@media only screen and (max-width: 800px) {
+  .portfolio--section {
+    padding: 20px 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .portfolio--heading {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .portfolio--sub--heading {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .projects__row-content {
+    align-items: center;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .projects__row-content-title {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .projects__row-content-desc {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .btn_to_projectDetails {
+    padding: 15px 40px;
+    font-size: 15px;
+  }
+}
+/* Contact-------------------------------------------------*/
+@media only screen and (max-width: 800px) {
+  .contact--section {
+    padding: 20px 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .contact--heading {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .contact--sub--heading {
+    font-size: 15px;
+  }
+}
