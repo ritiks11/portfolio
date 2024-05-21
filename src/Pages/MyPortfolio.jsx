@@ -30,7 +30,12 @@ export default function MyPortfolio() {
               users can effortlessly navigate through a vast database of
               entertainment content.
             </p>
-            <a className="btn_to_projectDetails">Case Study</a>
+            <a
+              className="btn_to_projectDetails"
+              href="https://bingeflixx.vercel.app/"
+            >
+              View Live Project!
+            </a>
           </div>
         </div>
       </div>

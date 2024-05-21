@@ -130,8 +130,8 @@ p {
   justify-content: end;
   align-items: center;
   padding: 15px 85.333px;
-  background: whitesmoke;
-  box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
+  background: white;
+  /* box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1); */
   position: fixed;
   top: 0;
   left: 0;
@@ -187,7 +187,7 @@ p {
   align-items: center;
   justify-content: space-between;
   gap: 32px;
-  background-color: var(--bg-shade);
+  background-color: white;
 }
 .hero--section--content--box {
   display: flex;
@@ -231,7 +231,7 @@ p {
 /*---------------------------- About Section Styles------------------------------*/
 .about--section {
   padding: 90px 80px;
-  background-color: #f7f7f7;
+  background-color: white;
 }
 .about--section--box {
   max-width: 75rem;
@@ -321,7 +321,7 @@ p {
   flex-direction: column;
   align-items: flex-start;
   gap: 80px;
-  background-color: #eeeeee;
+  background-color: white;
 }
 .portfolio--container-box {
   display: flex;
@@ -440,7 +440,7 @@ p {
   align-items: center;
   text-align: center;
   gap: 64px;
-  background-color: #f7f7f7;
+  background-color: white;
 }
 .contact--section--heading--box {
   margin-bottom: 3rem;
