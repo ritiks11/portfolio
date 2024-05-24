@@ -17,7 +17,7 @@ export default function MyPortfolio() {
         <div className="projects_row">
           <div className="projects__row-img-cont">
             <img
-              src="./img/bingeflix.png"
+              src="./img/bingeflixx.jpeg"
               alt="project screenshot"
               className="projects__row-img"
             />

@@ -68,7 +68,7 @@ p {
 } */
 .btn-primary {
   color: var(--white);
-  background-color: #929aab;
+  background-color: black;
   border: 1px solid var(--primary);
 }
 .btn-primary:hover {
@@ -503,7 +503,7 @@ p {
   align-self: stretch;
   border-radius: 8px;
   border: 1.333px solid var(--primary);
-  background: var(--white);
+  background: #eeeeee;
 }
 select {
   -webkit-appearance: none;

@@ -1,4 +1,24 @@
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 export default function ContactMe() {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_uzrn4kj", "template_18qq0z9", form.current, {
+        publicKey: "Hd7AZbLZdQFUFZ9yS",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <section id="Contact" className="contact--section">
       <div>
@@ -17,7 +37,7 @@ export default function ContactMe() {
             <input
               type="text"
               className="contact--input text-md"
-              name="first-name"
+              name="from_name"
               id="first-name"
               required
             />
@@ -27,7 +47,7 @@ export default function ContactMe() {
             <input
               type="text"
               className="contact--input text-md"
-              name="last-name"
+              name="last_name"
               id="last-name"
               required
             />
@@ -62,12 +82,18 @@ export default function ContactMe() {
             placeholder="Type your message..."
           />
         </label>
-        <label htmlFor="checkboc" className="checkbox--label">
+        {/* <label htmlFor="checkboc" className="checkbox--label">
           <input type="checkbox" required name="checkbox" id="checkbox" />
           <span className="text-sm">I accept the terms</span>
-        </label>
+        </label> */}
         <div>
-          <button className="btn btn-primary contact--form--btn">SUBMIT</button>
+          <button
+            onSubmit={sendEmail}
+            ref={form}
+            className="btn btn-primary contact--form--btn"
+          >
+            SUBMIT
+          </button>
         </div>
       </form>
     </section>
